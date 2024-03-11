@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mail?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+  mail:
+    host: smtp.qq.com
+    username: 2929701062@qq.com
+    password: lyvwdmzskxsqdgii
+    default-encoding: utf-8
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        prefetch: 1
+mail:
+  fromMail:
+    fromAddress: 2929701062@qq.com
